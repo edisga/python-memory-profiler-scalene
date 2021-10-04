@@ -35,7 +35,7 @@ def home():
 array = []
 @app.route("/memory")
 def memory():
-    random = 200000 * 1024
+    random = 100 * 1024
     array.append(generate_data(random))
     return f"Length of processed data: { len(array)}"
 
