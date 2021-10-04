@@ -4,7 +4,7 @@ from flask import Flask
 import os
 from random import random
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 def create_data():
     ret = []
